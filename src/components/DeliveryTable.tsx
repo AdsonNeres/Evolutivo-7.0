@@ -143,7 +143,7 @@ const DeliveryTable: React.FC<DeliveryTableProps> = ({ data }) => {
 
   // Função para determinar a cor de fundo da linha baseada na %Entrega
   const getRowBackgroundColor = (deliveryPercentage: number, index: number) => {
-    if (deliveryPercentage >= 98) {
+    if (deliveryPercentage >= 100) {
       return 'bg-green-100/80'; // Verde para >= 98%
     }
     if (deliveryPercentage >= 91) {
