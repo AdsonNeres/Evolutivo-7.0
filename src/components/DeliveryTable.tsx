@@ -154,8 +154,8 @@ const DeliveryTable: React.FC<DeliveryTableProps> = ({ data }) => {
 
   // Função para determinar a cor do texto da %Entrega
   const getDeliveryPercentageTextColor = (percentage: number) => {
-    if (percentage >= 98) return 'text-green-800 font-bold';
-    if (percentage >= 91) return 'text-yellow-800 font-bold';
+    if (percentage >= 98) return 'text-yellow-800 font-bold';
+    if (percentage >= 91) return 'text-red-800 font-bold';
     return 'text-red-800 font-bold';
   };
 
